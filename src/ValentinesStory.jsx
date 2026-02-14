@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Heart, Music, Star, Sparkles, MapPin, MessageCircle, Camera, Calendar } from 'lucide-react';
 
+const BASE = import.meta.env.BASE_URL;
+
 const CONFIG = {
   // Hero Section
   mainTitle: "Five Years of Friendship",
@@ -24,7 +26,7 @@ const CONFIG = {
         { text: "The original 'group at break'", icon: "👋" },
       ],
       photos: [
-        { caption: "First art pic you sent me", url: "/images/firstArt.jfif" },
+        { caption: "First art pic you sent me", url: `${BASE}images/firstArt.jfif` },
         { caption: "The group hangout (squint your eyes it's us)", url: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=400" }
       ]
     },
@@ -42,9 +44,9 @@ const CONFIG = {
         { text: "The never ending art pictures", icon: "🎨" }
       ],
       photos: [
-        { caption: "'Dr House' in my house", url: "/images/weFriends1.jfif" },
-        { caption: "Trixie!!", url: "/images/trixie.jfif" },
-        { caption: "Us in another universe, on our schools fence", url: "/images/weFriends2.jfif" }
+        { caption: "'Dr House' in my house", url: `${BASE}images/weFriends1.jfif` },
+        { caption: "Trixie!!", url: `${BASE}images/trixie.jfif` },
+        { caption: "Us in another universe, on our schools fence", url: `${BASE}images/weFriends2.jfif` }
       ]
     },
     {
@@ -61,8 +63,8 @@ const CONFIG = {
         { text: "Summer before we became adults", icon: "☀️" }
       ],
       photos: [
-        { caption: "Sometime in matric", url: "/images/redBlazer.jfif" },
-        { caption: "Last summer together", url: "/images/mdOption.jfif" }
+        { caption: "Sometime in matric", url: `${BASE}images/redBlazer.jfif` },
+        { caption: "Last summer together", url: `${BASE}images/mdOption.jfif` }
       ]
     },
     {
@@ -79,9 +81,9 @@ const CONFIG = {
         { text: "Care packages as reels with lame reactions as the ribbon", icon: "📦" }
       ],
       photos: [
-        { caption: "Before Uni", url: "/images/beforeUni.jfif" },
-        { caption: "After Uni", url: "/images/afterUni.jfif" },
-        { caption: "Meanwhile me: ", url: "/images/meUni.jfif" }
+        { caption: "Before Uni", url: `${BASE}images/beforeUni.jfif` },
+        { caption: "After Uni", url: `${BASE}images/afterUni.jfif` },
+        { caption: "Meanwhile me: ", url: `${BASE}images/meUni.jfif` }
       ]
     },
     {
@@ -98,8 +100,8 @@ const CONFIG = {
         { text: "Plans we're actually making happen", icon: "✨" }
       ],
       photos: [
-        { caption: "You in your head", url: "/images/currentYou.jfif" },
-        { caption: "Me thinking about you in my head", url: "/images/CurrentMe.jfif" }
+        { caption: "You in your head", url: `${BASE}images/currentYou.jfif` },
+        { caption: "Me thinking about you in my head", url: `${BASE}images/CurrentMe.jfif` }
       ]
     },
     {
@@ -116,7 +118,7 @@ const CONFIG = {
         { text: "More stories to tell", icon: "📖" }
       ],
       photos: [
-        { caption: "To many more years", url: "/images/future.jfif" }
+        { caption: "To many more years", url: `${BASE}images/future.jfif` }
       ]
     }
   ],
