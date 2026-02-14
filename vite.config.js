@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/your-repo-name/',
+  base: '/Happy-Valentines-Day-/',
   build: {
     outDir: 'docs'  // Build to docs folder instead of dist
   }
